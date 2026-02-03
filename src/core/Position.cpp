@@ -1,13 +1,13 @@
 #include "Position.h"
 
 Position::Position()
-    : sideToMove(0),
-      whiteCanCastleKingSide(true),
+    : whiteCanCastleKingSide(true),
       whiteCanCastleQueenSide(true),
       blackCanCastleKingSide(true),
       blackCanCastleQueenSide(true),
       enPassantSquare(-1),
-      halfMoveClock(0) 
+      halfMoveClock(0),
+      sideToMove(0)
       {
         for (int i = 0; i < 64; ++i) {
         board.setPiece(i, nullptr);

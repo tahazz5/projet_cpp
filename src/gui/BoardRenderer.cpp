@@ -4,6 +4,5 @@
 using namespace chess;
 
 void BoardRenderer::render(const Board &b) {
-    std::cout << "[BoardRenderer] rendering board to console..." << std::endl;
-    b.print();
+    std::cout << b.toString() << std::endl;
 }

@@ -6,6 +6,9 @@ class ChessWindow {
 public:
     ChessWindow();
     void show();
+
+private:
+    static void printHelp();
 };
 
 } // namespace chess
